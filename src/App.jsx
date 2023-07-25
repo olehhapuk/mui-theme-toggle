@@ -32,10 +32,11 @@ function App() {
 
       <Typography
         variant="h4"
-        sx={{
+        sx={(theme) => ({
           py: '50px',
           textAlign: 'center',
-        }}
+          color: theme.palette.mode === 'light' ? '#121212' : '#fff',
+        })}
       >
         Dark theme toggle example
       </Typography>
